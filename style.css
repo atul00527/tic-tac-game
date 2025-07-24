@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: rgb(181, 128, 230);
+    color: white;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container h1{
+    margin-bottom:40px ;
+    text-decoration: underline  ;
+}
+.gm-board {
+    display: grid;
+    grid-template-columns: repeat(3,minmax(120px, 1fr));
+}
+.cell {
+    border: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 60px;
+    font-weight: 600;
+    height: 100px ;
+    cursor: pointer;
+}
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+    border-top: none;
+}
+
+/* it work for n = 1, 2, 3 */
+
+.cell:nth-child(3n) {
+    border-right: none;
+}
+.cell:nth-child(3n+1) {
+    border-left: none;
+}
+.cell:nth-child(n+7) {
+    border-bottom: none;
+}
+
+.gm-player{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 30px;
+}
+.player {
+    margin-inline: 18px;
+    font: 24px;
+    font-weight: 600;
+}
+
+.restartBtn {
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin-block: 18px;
+    padding: 10px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.restartBtn:hover {
+     background-color: rgb(84, 6, 156);    
+
+}
+@media screen and (max-width:550px) {
+    .container h1 {
+        font-size: 25px;
+
+    }
+    
+    .gm-board{
+         grid-template-columns: repeat(3,minmax(90px, 1fr));
+    }
+    .cell{
+        height: 95px;
+
+    }
+    
+}
