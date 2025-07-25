@@ -25,7 +25,7 @@ body {
     grid-template-columns: repeat(3,minmax(120px, 1fr));
 }
 .cell {
-    border: 2px solid gray;
+    border: 2px solid rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
