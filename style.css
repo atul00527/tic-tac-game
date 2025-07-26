@@ -80,6 +80,9 @@ body {
      background-color: rgb(84, 6, 156);    
 
 }
+.cell.disable {
+    background: #8c8c8c;
+}
 @media screen and (max-width:550px) {
     .container h1 {
         font-size: 25px;
