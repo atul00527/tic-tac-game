@@ -94,12 +94,12 @@ const handleClick = (e) => {
             cell.classList.add('disable')
         })
     }
-    const restartGame = () => {
-        gameCells.forEach(cell => {
-            cell.textContent = '';
-            cell.classList.remove('disabled');
-        });
-        restartGame(); 
+    // const restartGame = () => {
+    //     gameCells.forEach(cell => {
+    //         cell.textContent = '';
+    //         cell.classList.remove('disabled');
+    //     });
+    //     restartGame(); 
     }
     startGame();
 
