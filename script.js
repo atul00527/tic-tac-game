@@ -100,6 +100,6 @@ const handleClick = (e) => {
     //         cell.classList.remove('disabled');
     //     });
     //     restartGame(); 
-    }
+    
     startGame();
 
