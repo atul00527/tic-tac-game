@@ -1,0 +1,29 @@
+{
+  "name": "tic-tac-game",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/atul00527/tic-tac-game#readme",
+  "bugs": {
+    "url": "https://github.com/atul00527/tic-tac-game/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atul00527/tic-tac-game.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.mjs",
+  "scripts": {
+     "dev": "nodemon",
+    "start": "node index.mjs"
+    
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  }
+}
